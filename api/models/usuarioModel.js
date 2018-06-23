@@ -11,11 +11,10 @@ var UsuarioSchema = new Schema({
   correo: {type: String},
   nivel: {type: String},
   id_maquina: {type: String},
-   reglas:[{
-        max_impresiones: {type: String},
-        intervalo_impresiones: {type: String},
-        habilitado: {type: String, default: 'true'},
-  }]
+      max_impresiones: {type: String},
+      intervalo_impresiones: {type: String},
+      habilitado: {type: String, default: 'true'},
+  
 });
 
 

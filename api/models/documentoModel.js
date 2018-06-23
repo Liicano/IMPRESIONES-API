@@ -10,14 +10,8 @@ var DocumentoSchema = new Schema({
   tipo_documento: {type: String},
   estado: {type: String},
   cola: {type: String, default: 'true'},
-  usuario_emisor:[{
-      cedula: {type: String},
-      nombre: {type: String},
-      apellido: {type: String},
-      id_maquina: {type: String},
-      max_impresiones: {type: String},
-      restringido: {type: String}
-  }]
+  usuario_emisor: {type: String},
+  
 });
 
 module.exports = mongoose.model('Documento', DocumentoSchema);

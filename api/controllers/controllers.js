@@ -59,11 +59,11 @@ Documento.remove({
 //INGRESAR UN NUEVO DOCUMENTO
 exports.Ingresar_Documento = function(req, res) {
   var Nuevo_Documento = new Documento(req.body);
-  Nuevo_Documento.save(function(err, documento) {
-    if (err)
-      res.send(err);
-    res.json(documento);
-  });
+   Nuevo_Documento.save(function(err, documento) {
+     if (err)
+       res.send(err);
+     res.json(documento);
+   });
 };
 
 
@@ -180,8 +180,8 @@ exports.sendEmail = function(req, res) {
               port: 465,
               secure: true, // secure:true for port 465, secure:false for port 587
               auth: {
-                  user: 'hectorluisgonzalezlarreal@gmail.com',
-                  pass: '*Hl7369372'
+                  user: 'angieurechelopez@gmail.com',
+                  pass: 'SophiE*.*'
               },
               tls: {
                   rejectUnauthorized: false
